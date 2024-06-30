@@ -26,10 +26,10 @@ function App() {
         <CountProvider>
           <Routes>
             <Route
-              path="/"
+              path="/Ecommerce"
               element={<AppLayout />}
             >
-              <Route index element={<Home />} />
+              <Route path="home" element={<Home />} />
               <Route path="*" element={<NotFound />} />
               <Route path="about" element={<About />} />
               <Route path="allProducts" element={<OurProducts />} />

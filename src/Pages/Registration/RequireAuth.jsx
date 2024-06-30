@@ -9,7 +9,7 @@ const RequireAuth = () => {
   return isAuth ? (
     <Outlet />
   ) : (
-    <Navigate to="/login" state={{ from: location }} replace />
+    <Navigate to="/Ecommerce/login" state={{ from: location }} replace />
   );
 };
 

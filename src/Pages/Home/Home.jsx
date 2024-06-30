@@ -203,7 +203,7 @@ const Home = () => {
       <section className="grid grid-cols-12 grid-rows-1 md:gap-5">
         <div className="col-span-12 row-start-2 pt-10 md:row-start-1 lg:pt-20 md:col-span-3 md:pe-5 md:border-e-2">
           <div className="flex items-center justify-between mb-5">
-            <Link to="/allProducts" className="font-semibold">
+            <Link to="/Ecommerce/allProducts" className="font-semibold">
               {t("Home.Woman’s Fashion")}
             </Link>
             {document.documentElement.dir === "rtl" ? (
@@ -239,7 +239,7 @@ const Home = () => {
             )}
           </div>
           <div className="flex items-center justify-between mb-5">
-            <Link to="/allProducts" className="font-semibold">
+            <Link to="/Ecommerce/allProducts" className="font-semibold">
               {t("Home.Men’s Fashion")}
             </Link>
             {document.documentElement.dir === "rtl" ? (
@@ -274,25 +274,25 @@ const Home = () => {
               </svg>
             )}
           </div>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Electronics")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Home & Lifestyle")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Medicine")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Sports & Outdoor")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Baby’s & Toys")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Groceries & Pets")}
           </Link>
-          <Link to="/allProducts" className={styleLink}>
+          <Link to="/Ecommerce/allProducts" className={styleLink}>
             {t("Home.Health & Beauty")}
           </Link>
         </div>
@@ -305,7 +305,7 @@ const Home = () => {
             <p className="mb-8 text-5xl font-bold">
               {t("Home.Up to 10% off Voucher")}
             </p>
-            <Link to="/allProducts" className="flex items-center gap-3">
+            <Link to="/Ecommerce/allProducts" className="flex items-center gap-3">
               <span className="flex gap-3 py-1 text-xl border-b">
                 {t("ShopNow")}
               </span>

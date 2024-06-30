@@ -55,18 +55,18 @@ const Footer = () => {
         </div>
         <div className="leading-[3rem]">
           <h2 className={styleH2}>{t("Footer.Account")}</h2>
-          <Link className={`${styleP} ${block}`} to="/account">
+          <Link className={`${styleP} ${block}`} to="/Ecommerce/account">
             {t("Footer.My Account")}
           </Link>
-          <Link to="/login">{t("Footer.Login")}/</Link>
-          <Link to="/signup">{t("Footer.Register")}</Link>
-          <Link to="/cart" className={block}>
+          <Link to="/Ecommerce/login">{t("Footer.Login")}/</Link>
+          <Link to="/Ecommerce/signup">{t("Footer.Register")}</Link>
+          <Link to="/Ecommerce/cart" className={block}>
             {t("Footer.Cart")}
           </Link>
-          <Link to="/wishlist" className={block}>
+          <Link to="/Ecommerce/wishlist" className={block}>
             {t("Footer.Wishlist")}
           </Link>
-          <Link to="/" className={block}>
+          <Link to="/Ecommerce/" className={block}>
             {t("Footer.Shop")}
           </Link>
         </div>
@@ -75,7 +75,7 @@ const Footer = () => {
           <Link to="" className={styleP}>{t("Footer.Privacy Policy")}</Link>
           <Link to="" className={block}>{t("Footer.Terms Of Use")}</Link>
           <Link to="" className={block}>{t("Footer.FAQ")}</Link>
-          <Link to="/contact" className={block}>{t("Footer.Contact")}</Link>
+          <Link to="/Ecommerce/contact" className={block}>{t("Footer.Contact")}</Link>
         </div>
         <div className="leading-[3rem]">
           <h2 className={styleH2}>{t("Footer.Download App")}</h2>

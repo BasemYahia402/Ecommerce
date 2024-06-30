@@ -43,7 +43,7 @@ const SectionCategories = ({ category, TitleText1, TitleText2 }) => {
       <div className="flex flex-wrap gap-5 mt-5 md:mt-16">
         {category.map((category, index) => (
           <Link
-            to="/allProducts"
+            to="/Ecommerce/allProducts"
             key={index}
             className="p-5 text-center border rounded-md md:w-[11.8rem] h-36 w-full group hover:bg-[#df4444] cursor-pointer"
           >

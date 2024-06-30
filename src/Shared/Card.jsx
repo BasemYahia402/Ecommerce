@@ -141,7 +141,7 @@ const Card = (props) => {
         )}
         {!isClikedWish && (
           <Link
-            to={`/productDetail/${id}`}
+            to={`/Ecommerce/productDetail/${id}`}
             className="absolute p-2 bg-white rounded-full top-16 right-3"
           >
             <svg
@@ -181,7 +181,7 @@ const Card = (props) => {
             <RatingStar rating={rating} setRating={setRating} readOnly={true} />
             <span>({rate.length})</span>
           </p>
-          <Link to={`/review/${id}`}>
+          <Link to={`/Ecommerce/review/${id}`}>
             <img src={reviewImg} alt="reviewImg" />
           </Link>
         </div>

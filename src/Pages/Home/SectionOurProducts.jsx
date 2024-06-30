@@ -77,7 +77,7 @@ const SectionOurProducts = ({
             <Loader />
           )}
           <Link
-            to="/allProducts"
+            to="/Ecommerce/allProducts"
             className="bg-[#df4444] text-white md:px-16 px-8 py-2 md:py-4 mt-10 md:mt-20 md:text-xl text-lg rounded-md mx-auto text-center flex md:w-72 w-52"
           >
             {ButtonText}
