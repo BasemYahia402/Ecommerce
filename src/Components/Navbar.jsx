@@ -88,7 +88,7 @@ const Navbar = ({ onHandleSearch }) => {
             }`}
           >
             <NavLink
-              to="/Ecommerce/home"
+              to="/Ecommerce"
               className={({ isActive }) =>
                 isActive ? "border-b border-black" : ""
               }
