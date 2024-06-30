@@ -6,19 +6,21 @@ const LanguageDropdown = () => {
 
   const handleLanguageChange = (e) => {
     const newLang = e.target.value;
-    console.log(newLang);
     i18n.changeLanguage(newLang);
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
     localStorage.setItem("language", newLang);
   };
 
-useEffect(()=>{
+  useEffect(() => {
     const storedLanguage = localStorage.getItem("language");
     if (storedLanguage) {
       i18n.changeLanguage(storedLanguage);
       document.documentElement.dir = storedLanguage === "ar" ? "rtl" : "ltr";
+    } else {
+      i18n.changeLanguage("en");
+      document.documentElement.dir = "ltr";
     }
-},[])
+  }, [i18n]);
 
   return (
     <select
