@@ -25,7 +25,10 @@ function App() {
       <AuthProvider>
         <CountProvider>
           <Routes>
-            <Route path="/" element={<AppLayout />}>
+            <Route
+              path="/Ecommerce"
+              element={<AppLayout />}
+            >
               <Route index element={<Home />} />
               <Route path="*" element={<NotFound />} />
               <Route path="about" element={<About />} />
