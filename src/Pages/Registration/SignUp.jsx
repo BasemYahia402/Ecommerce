@@ -31,7 +31,6 @@ const SignUp = () => {
         )
       : errorMessage
     : null;
-console.log(errorMessage);
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
