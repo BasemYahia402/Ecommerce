@@ -26,7 +26,7 @@ function App() {
         <CountProvider>
           <Routes>
             <Route
-              path="/Ecommerce"
+              path="/"
               element={<AppLayout />}
             >
               <Route index element={<Home />} />

@@ -43,7 +43,7 @@ const SectionToday = ({
         <Loader />
       )}
       <Link
-        to="/Ecommerce/allProducts"
+        to="/allProducts"
         className="bg-[#df4444] text-white md:px-16 px-12 py-3 md:py-4 mt-20 text-xl rounded-md mx-auto text-center flex w-72"
       >
         {ButtonText}

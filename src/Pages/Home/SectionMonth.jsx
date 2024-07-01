@@ -24,7 +24,7 @@ const SectionMonth = ({
           {TitleText2}
         </h2>
         <Link
-          to="/Ecommerce/allProducts"
+          to="/allProducts"
           className="bg-[#df4444] text-white md:px-12 md:py-4 px-10 py-3 rounded-md"
         >
           {ButtonText1}

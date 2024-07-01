@@ -27,7 +27,7 @@ const Navbar = ({ onHandleSearch }) => {
     const auth = getAuth();
     signOut(auth)
       .then(() => {
-        navigate("/Ecommerce/login");
+        navigate("/login");
       })
       .catch((error) => {
         setErrorMessage(error);
@@ -48,7 +48,7 @@ const Navbar = ({ onHandleSearch }) => {
               "Navbar.Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!"
             )}
             <Link
-              to="/Ecommerce/allProducts"
+              to="/allProducts"
               className="font-semibold underline w-28 ltr:md:ml-4 rtl:md:mr-4"
             >
               {t("ShopNow")}
@@ -88,7 +88,7 @@ const Navbar = ({ onHandleSearch }) => {
             }`}
           >
             <NavLink
-              to="/Ecommerce"
+              to=""
               className={({ isActive }) =>
                 isActive ? "border-b border-black" : ""
               }
@@ -96,7 +96,7 @@ const Navbar = ({ onHandleSearch }) => {
               {t("Navbar.Home")}
             </NavLink>
             <NavLink
-              to="/Ecommerce/contact"
+              to="/contact"
               className={({ isActive }) =>
                 isActive ? "border-b border-black" : ""
               }
@@ -104,7 +104,7 @@ const Navbar = ({ onHandleSearch }) => {
               {t("Navbar.Contact")}
             </NavLink>
             <NavLink
-              to="/Ecommerce/about"
+              to="/about"
               className={({ isActive }) =>
                 isActive ? "border-b border-black" : ""
               }
@@ -114,7 +114,7 @@ const Navbar = ({ onHandleSearch }) => {
             {isAuth ? null : (
               <li>
                 <NavLink
-                  to="/Ecommerce/signup"
+                  to="/signup"
                   className={({ isActive }) =>
                     isActive ? "border-b border-black" : ""
                   }
@@ -139,7 +139,7 @@ const Navbar = ({ onHandleSearch }) => {
                 placeholder={t("Navbar.What are you looking for?")}
                 onChange={handleSerach}
               />
-              <Link to="/Ecommerce/searchResults">
+              <Link to="/searchResults">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -156,13 +156,13 @@ const Navbar = ({ onHandleSearch }) => {
             </div>
 
             <div className="flex items-center justify-between h-12 gap-2 md:gap-3 lg:w-32">
-              {location.pathname !== "/Ecommerce/login" &&
-                location.pathname !== "/Ecommerce/signup" && (
+              {location.pathname !== "/login" &&
+                location.pathname !== "/signup" && (
                   <>
                     <div className="relative">
                       <NavLink
-                        to="/Ecommerce/wishlist"
-                        onClick={() => isAuth || navigate("/Ecommerce/login")}
+                        to="/wishlist"
+                        onClick={() => isAuth || navigate("/login")}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -185,8 +185,8 @@ const Navbar = ({ onHandleSearch }) => {
                     </div>
                     <div className="relative">
                       <NavLink
-                        to="/Ecommerce/cart"
-                        onClick={() => isAuth || navigate("/Ecommerce/login")}
+                        to="/cart"
+                        onClick={() => isAuth || navigate("/login")}
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +241,7 @@ const Navbar = ({ onHandleSearch }) => {
                     }`}
                   >
                     <div className="mb-4 text-white">
-                      <NavLink to="/Ecommerce/account" className="flex gap-3">
+                      <NavLink to="/account" className="flex gap-3">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -260,7 +260,7 @@ const Navbar = ({ onHandleSearch }) => {
                       </NavLink>
                     </div>
                     <div className="mb-4 text-white">
-                      <NavLink to="/Ecommerce/order" className="flex gap-4">
+                      <NavLink to="/order" className="flex gap-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -281,7 +281,7 @@ const Navbar = ({ onHandleSearch }) => {
                     </div>
                     <div className="mb-4 text-white">
                       <NavLink
-                        to="/Ecommerce/Cancellations"
+                        to="/Cancellations"
                         className="flex gap-4"
                       >
                         <svg
@@ -303,7 +303,7 @@ const Navbar = ({ onHandleSearch }) => {
                       </NavLink>
                     </div>
                     <div className="mb-4 text-white">
-                      <NavLink to="/Ecommerce/reviews" className="flex gap-4">
+                      <NavLink to="/reviews" className="flex gap-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
