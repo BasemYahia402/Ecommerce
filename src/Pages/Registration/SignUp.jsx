@@ -184,14 +184,20 @@ const SignUp = () => {
             </button>
             <button
               type="button"
-              className={`${styleButton} flex items-center justify-center py-3 border border-gray-400 md:px-5 rtl:flex-row-reverse`}
+              className={`${styleButton} flex items-center justify-center py-3 border border-gray-400 md:px-5 rtl:flex-row-reverse disabled:opacity-75`}
               onClick={handleSignUpWithGoogle}
+              disabled
             >
               <img src={googleImg} alt="googleImg" className="mr-4" />
               <span className="text-lg font-semibold ">
                 {t("Signup.Sign up with Google")}
               </span>
             </button>
+            <p className="p-1 mt-5 font-bold text-center text-white bg-red-600">
+              {t(
+                "Signup.There is a problem with Firebase! in button SignUp with google"
+              )}
+            </p>
             <p className="w-64 mx-auto mt-10 text-lg font-semibold text-gray-400 rtl:w-72">
               {t("Signup.Already have account?")}
               <Link to="/login" className="pb-1 ml-3 text-gray-500 border-b-2">
